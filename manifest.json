@@ -1,0 +1,23 @@
+{
+  "name": "hide HackerNews posts with certain words.",
+  "version": "1.0",
+  "description": "Because",
+  "permissions": [],
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://news.ycombinator.com/*"
+      ],
+      "js": [
+        "fixit.js"
+      ]
+    }
+  ],
+  "manifest_version": 2
+}
